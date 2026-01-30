@@ -528,3 +528,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+##### MacOS gitignore #####
+.DS_Store
