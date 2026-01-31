@@ -6,6 +6,7 @@ public class MaskStack : MonoBehaviour
     Stack<Mask> masks;
 
     public float maskOffset = 1.0f;
+    public float wornMaskScale = 1.5f;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class MaskStack : MonoBehaviour
             Destroy(collider.GetComponent<Rigidbody2D>());
 
             // attach the mask to the player
+            mask.gameObject.transform.localScale = new Vector2(wornMaskScale, wornMaskScale);
             mask.gameObject.transform.SetParent(gameObject.transform);
             mask.gameObject.transform.localPosition = new Vector2(0, maskOffset * masks.Count);
 

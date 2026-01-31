@@ -2,6 +2,16 @@ using UnityEngine;
 
 public class DamageReceiver : MonoBehaviour
 {
+    public AudioClip damageSound;
+    public AudioClip deathSound;
+
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void TakeDamage(DamageParams damage)
     {
         MaskStack maskStack = GetComponent<MaskStack>();
@@ -19,12 +29,25 @@ public class DamageReceiver : MonoBehaviour
 
                 // otherwise, remove the top mask, but don't kill the player
                 maskStack.RemoveMask();
+
+                if (audioSource != null)
+                {
+                    audioSource.PlayOneShot(damageSound);
+                }
+
                 return;
             }
         }
 
         // nothing left to save you, you die
         Debug.Log("Took " + damage.type + " damage");
-        Destroy(gameObject);
+
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+
+        Destroy(GetComponent<Player>());
+        Destroy(GetComponent<SpriteRenderer>());
     }
 }
