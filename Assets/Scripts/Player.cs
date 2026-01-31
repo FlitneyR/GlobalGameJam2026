@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 moveValue = moveAction.ReadValue<Vector2>() * moveSpeed;
+        Vector2 moveValue = moveAction.ReadValue<Vector2>() * Time.deltaTime * moveSpeed;
 
         transform.Translate(moveValue);
     }
