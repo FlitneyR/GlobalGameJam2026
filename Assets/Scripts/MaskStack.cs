@@ -17,11 +17,24 @@ public class MaskStack : MonoBehaviour
         Mask mask = collider.GetComponent<Mask>();
         if (mask != null)
         {
-            masks.Push(mask);
             Debug.Log("Collected mask: " + mask);
 
+            masks.Push(mask);
+
+            // remove the masks's rigidbody
+            Destroy(collider.GetComponent<Rigidbody2D>());
+
+            // attach the mask to the player
             mask.gameObject.transform.SetParent(gameObject.transform);
             mask.gameObject.transform.localPosition = new Vector2(0, maskOffset * masks.Count);
+
+            // make masks render in front of the player, and lower masks
+            SpriteRenderer spriteRenderer = collider.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.sortingLayerName = "Masks";
+                spriteRenderer.sortingOrder = masks.Count;
+            }
         }
     }
 

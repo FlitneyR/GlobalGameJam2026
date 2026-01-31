@@ -299,4 +299,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b03f86c53b54986af96fcfaa075a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskStack
-  maskOffset: 1
+  maskOffset: 0.25
