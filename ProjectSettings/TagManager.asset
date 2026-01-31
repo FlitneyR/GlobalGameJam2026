@@ -50,6 +50,9 @@ TagManager:
   - name: Player
     uniqueID: 4090477439
     locked: 0
+  - name: Masks
+    uniqueID: 1931324901
+    locked: 0
   m_RenderingLayers:
   - Default
   - Player

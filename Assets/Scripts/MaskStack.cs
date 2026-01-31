@@ -19,8 +19,6 @@ public class MaskStack : MonoBehaviour
         {
             Debug.Log("Collected mask: " + mask);
 
-            masks.Push(mask);
-
             // remove the masks's rigidbody
             Destroy(collider.GetComponent<Rigidbody2D>());
 
@@ -35,6 +33,8 @@ public class MaskStack : MonoBehaviour
                 spriteRenderer.sortingLayerName = "Masks";
                 spriteRenderer.sortingOrder = masks.Count;
             }
+
+            masks.Push(mask);
         }
     }
 
