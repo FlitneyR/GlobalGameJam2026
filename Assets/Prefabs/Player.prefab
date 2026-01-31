@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 1434991423172027713}
   - component: {fileID: 199554631205291500}
   - component: {fileID: -2041053346409366905}
+  - component: {fileID: 1538376914109021567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6305c6fa67cf24994a87a550de311b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 0.01
+  moveSpeed: 1
 --- !u!212 &-9083266384754720064
 SpriteRenderer:
   serializedVersion: 2
@@ -286,3 +287,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b10fc95560843f1b10b7123318f259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &1538376914109021567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8492292997074290136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b03f86c53b54986af96fcfaa075a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskStack
+  maskOffset: 1
