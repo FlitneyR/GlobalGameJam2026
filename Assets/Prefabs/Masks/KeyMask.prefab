@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2451048158778133636, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1385258219582430720, guid: 51f903b456a72499b847614869435fb7, type: 3}
     - target: {fileID: 5897203235112829120, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
       value: 0
