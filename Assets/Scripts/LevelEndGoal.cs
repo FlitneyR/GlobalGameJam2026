@@ -10,6 +10,7 @@ public class LevelEndGoal : MonoBehaviour
             return;
         }
 
-        LevelManager.Get().GoToNextLevel();
+        // LevelManager.Get().GoToNextLevel();
+        EndLevelScreen.instance.ShowVictory();
     }
 }

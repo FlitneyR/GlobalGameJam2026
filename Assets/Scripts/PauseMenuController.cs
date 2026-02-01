@@ -29,14 +29,14 @@ public class PauseMenuController : MonoBehaviour
     public void Pause()
     {
         isPaused = true;
-        canvas.enabled = true;
+        canvas.gameObject.SetActive(true);
         Time.timeScale = 0.0f;
     }
 
     public void Resume()
     {
         isPaused = false;
-        canvas.enabled = false;
+        canvas.gameObject.SetActive(false);
         Time.timeScale = 1.0f;
     }
 

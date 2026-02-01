@@ -53,6 +53,8 @@ public class DamageReceiver : MonoBehaviour
 
         Destroy(GetComponent<Player>());
         Destroy(GetComponentInChildren<SpriteRenderer>());
+
+        EndLevelScreen.instance.ShowFailure();
     }
 
     private void LogDamageEvent(DamageParams damage)

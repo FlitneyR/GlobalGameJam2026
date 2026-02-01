@@ -63,6 +63,7 @@ public class LevelManager : ScriptableObject
         if (levelIndex + 1 >= levels.Count)
         {
             Debug.Log("Reached the end of the levels");
+            GoToMainMenu();
             return;
         }
 
