@@ -46,5 +46,12 @@ public class ActionLog : MonoBehaviour
         }
 
         logText.text = sb.ToString();
+        logText.ForceMeshUpdate();
+
+        if (logText.isTextOverflowing)
+        {
+            Messages.RemoveAt(0);
+            UpdateText();
+        }
     }
 }
