@@ -54,6 +54,9 @@ TagManager:
   - name: Masks
     uniqueID: 1931324901
     locked: 0
+  - name: OverPlayer
+    uniqueID: 4184941117
+    locked: 0
   m_RenderingLayers:
   - Default
   - Player

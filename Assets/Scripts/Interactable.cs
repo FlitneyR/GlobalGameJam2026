@@ -2,12 +2,12 @@ using UnityEngine;
 
 public enum InteractableType
 {
-    NONE,
-    DOOR,
-    SECRET_WALL,
+    None,
+    Door,
+    SecretWall,
 }
 
 public class Interactable : MonoBehaviour
 {
-    public InteractableType Type { get; set; } = InteractableType.NONE;
+    public InteractableType Type { get; set; } = InteractableType.None;
 }
