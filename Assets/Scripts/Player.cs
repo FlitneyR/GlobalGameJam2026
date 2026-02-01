@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 
         animator.SetBool("Moving", moveInput.magnitude > 0.0);
 
-        Vector2 moveValue = moveInput * Time.deltaTime * moveSpeed;
-        rigidbody2d.MovePosition(new Vector2(transform.position.x, transform.position.y) + moveValue);
+        Vector2 moveValue = moveInput * moveSpeed;
+        rigidbody2d.linearVelocity = moveValue;
     }
 }

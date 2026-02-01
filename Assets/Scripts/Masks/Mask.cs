@@ -23,6 +23,11 @@ public class Mask : MonoBehaviour
         return false;
     }
 
+    public virtual bool CanPush(Pushable pushable)
+    {
+        return false;
+    }
+
     public virtual void OnCollect()
     {
         GetComponents<LogEvent>().First(le => le.id == "OnCollect")?.LogMessage();
