@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 20c8803e14e2c4e70bf19be190d9e28b, type: 2}
   - {fileID: 11400000, guid: 22dd0dcb6b6ab46c780229e95af2215e, type: 2}
   - {fileID: 11400000, guid: 9299e057567814a8bac6eabacb95c0cf, type: 2}
+  - {fileID: 11400000, guid: 2e2dd975b1e394150a3e8f76635dd5e0, type: 2}
   mainMenuPath: Assets/Scenes/MainMenu.unity
