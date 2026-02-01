@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     InputAction moveAction;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    Rigidbody2D rigidbody2d;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
 
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,6 @@ public class Player : MonoBehaviour
         animator.SetBool("Moving", moveInput.magnitude > 0.0);
 
         Vector2 moveValue = moveInput * Time.deltaTime * moveSpeed;
-        transform.Translate(moveValue);
+        rigidbody2d.MovePosition(new Vector2(transform.position.x, transform.position.y) + moveValue);
     }
 }
