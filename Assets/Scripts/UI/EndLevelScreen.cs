@@ -8,6 +8,9 @@ public class EndLevelScreen : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+
+        victoryMessage.SetActive(false);
+        failureMessage.SetActive(false);
     }
 
     ~EndLevelScreen()

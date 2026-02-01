@@ -45,11 +45,25 @@ public class LevelManager : ScriptableObject
         return levels.FindIndex(level => level.scenePath == path);
     }
 
-    public void GoToNextLevel()
+    public void MarkLevelFinished()
     {
         Scene scene = SceneManager.GetActiveScene();
         Debug.Log("Finished level: " + scene.name);
 
+        int levelIndex = FindLevelIndex(scene.path);
+
+        if (levelIndex < 0)
+        {
+            Debug.Log("Finished a level, but it isn't registered in the LevelManager");
+            return;
+        }
+
+        levels[levelIndex].hasFinished = true;
+    }
+
+    public void GoToNextLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
         int levelIndex = FindLevelIndex(scene.path);
 
         if (levelIndex < 0)
