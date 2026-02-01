@@ -11,4 +11,11 @@ public class Mask : MonoBehaviour
     {
         return true;
     }
+
+    /// <summary>
+    /// Pass an interactable
+    public virtual bool CanInteract(Interactable interactableObject)
+    {
+        return false;
+    }
 }
