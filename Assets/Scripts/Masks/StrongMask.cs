@@ -4,6 +4,7 @@ public class StrongMask : Mask
 {
     public override bool CanPush(Pushable pushable)
     {
+        OnUse();
         return true;
     }
 }

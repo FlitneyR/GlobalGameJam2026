@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: message
       value: You flex your muscles
       objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.17254902
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.19215688
+      objectReference: {fileID: 0}
     - target: {fileID: 2451048158778133636, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -19,6 +31,18 @@ PrefabInstance:
     - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: message
       value: You feel STRONG
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.17254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.19215688
       objectReference: {fileID: 0}
     - target: {fileID: 9075029546469674457, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_LocalPosition.x
