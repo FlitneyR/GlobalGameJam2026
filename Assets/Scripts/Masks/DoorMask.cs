@@ -6,6 +6,8 @@ public class DoorMask : Mask
 
     public override bool CanInteract(Interactable interactableObject)
     {
-        return interactableType != InteractableType.None && interactableObject.Type == interactableType;
+        bool canInteract = interactableType != InteractableType.None && interactableObject.Type == interactableType;
+        if (canInteract) OnUse();
+        return canInteract;
     }
 }

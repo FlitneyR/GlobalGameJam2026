@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using UnityEngine;
 
 public class DamageReceiver : MonoBehaviour
@@ -35,6 +37,8 @@ public class DamageReceiver : MonoBehaviour
                     audioSource.PlayOneShot(damageSound);
                 }
 
+                LogDamageEvent(damage);
+
                 return;
             }
         }
@@ -49,5 +53,11 @@ public class DamageReceiver : MonoBehaviour
 
         Destroy(GetComponent<Player>());
         Destroy(GetComponentInChildren<SpriteRenderer>());
+    }
+
+    private void LogDamageEvent(DamageParams damage)
+    {
+        string logId = "OnTakeDamage" + damage.type.ToString();
+        GetComponents<LogEvent>().First(le => le.id == logId)?.LogMessage();
     }
 }

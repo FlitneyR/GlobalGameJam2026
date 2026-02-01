@@ -44,6 +44,8 @@ public class MaskStack : MonoBehaviour
             }
 
             masks.Push(mask);
+
+            mask.OnCollect();
         }
     }
 

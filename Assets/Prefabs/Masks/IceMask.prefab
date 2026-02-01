@@ -8,10 +8,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: message
+      value: You're too cold to care.
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.57254905
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.45882356
+      objectReference: {fileID: 0}
     - target: {fileID: 2451048158778133636, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5821121955940348908, guid: 3e23194cf822e44c6b171cd10db52801, type: 3}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: id
+      value: OnCollect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: message
+      value: Sadness grips you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.57254905
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.46274513
+      objectReference: {fileID: 0}
     - target: {fileID: 7848005930647505238, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_Sprite
       value: 

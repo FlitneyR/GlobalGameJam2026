@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class Mask : MonoBehaviour
@@ -20,5 +21,15 @@ public class Mask : MonoBehaviour
     public virtual bool CanInteract(Interactable interactableObject)
     {
         return false;
+    }
+
+    public virtual void OnCollect()
+    {
+        GetComponents<LogEvent>().First(le => le.id == "OnCollect")?.LogMessage();
+    }
+
+    public virtual void OnUse()
+    {
+        GetComponents<LogEvent>().First(le => le.id == "OnUse")?.LogMessage();
     }
 }

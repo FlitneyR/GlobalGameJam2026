@@ -8,10 +8,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: message
+      value: Man literally too angry to die.
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.16078432
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: -1190626991204188096, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.7960785
+      objectReference: {fileID: 0}
     - target: {fileID: 2451048158778133636, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -876865441545650142, guid: 9b726a6b94c12422987ab617fce365b7, type: 3}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: id
+      value: OnCollect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: message
+      value: You are ANGRY now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.b
+      value: 0.16078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.g
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419080092980569486, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
+      propertyPath: colour.r
+      value: 0.7960785
+      objectReference: {fileID: 0}
     - target: {fileID: 7848005930647505238, guid: 5c0f3716a5c39324fb061aebde68cc55, type: 3}
       propertyPath: m_Sprite
       value: 

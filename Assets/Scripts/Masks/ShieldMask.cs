@@ -6,6 +6,8 @@ public class ShieldMask : Mask
 
     public override bool OnDamage(DamageParams damage)
     {
-        return damage.type != type;
+        bool shouldTakeDamage = damage.type != type;
+        if (!shouldTakeDamage) OnUse();
+        return shouldTakeDamage;
     }
 }
