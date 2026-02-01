@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tutorial2_LevelData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   scenePath: Assets/Scenes/Tutorial2.unity
-  levelName: Tutorial Level 2
+  levelName: Two Faced

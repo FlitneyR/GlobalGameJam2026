@@ -7,6 +7,9 @@ public class LevelData : ScriptableObject
 {
     public string scenePath;
     public string levelName;
+
+    [System.NonSerialized]
+    public bool hasFinished;
 }
 
 [CreateAssetMenu(fileName = "LevelManager", menuName = "Scriptable Objects/Level Manager")]
@@ -29,12 +32,17 @@ public class LevelManager : ScriptableObject
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().path);
+        GoToLevel(SceneManager.GetActiveScene().path);
     }
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene(mainMenuPath);
+        GoToLevel(mainMenuPath);
+    }
+
+    int FindLevelIndex(string path)
+    {
+        return levels.FindIndex(level => level.scenePath == path);
     }
 
     public void GoToNextLevel()
@@ -42,10 +50,7 @@ public class LevelManager : ScriptableObject
         Scene scene = SceneManager.GetActiveScene();
         Debug.Log("Finished level: " + scene.name);
 
-        int levelIndex = levels
-            .FindIndex(level =>
-                level.scenePath == scene.path
-            );
+        int levelIndex = FindLevelIndex(scene.path);
 
         if (levelIndex < 0)
         {
@@ -53,12 +58,32 @@ public class LevelManager : ScriptableObject
             return;
         }
 
+        levels[levelIndex].hasFinished = true;
+
         if (levelIndex + 1 >= levels.Count)
         {
             Debug.Log("Reached the end of the levels");
             return;
         }
 
-        SceneManager.LoadScene(levels[levelIndex + 1].scenePath);
+        GoToLevel(levels[levelIndex + 1].scenePath);
+    }
+
+    public void GoToLevel(string levelPath)
+    {
+        SceneManager.LoadScene(levelPath);
+    }
+
+    public bool CanSelectLevel(string levelPath)
+    {
+        int levelIndex = FindLevelIndex(levelPath);
+
+        if (levelIndex < 0)
+        {
+            Debug.Log(levelPath + " is not a registered level");
+            return false;
+        }
+
+        return levelIndex == 0 || levels[levelIndex - 1].hasFinished;
     }
 }

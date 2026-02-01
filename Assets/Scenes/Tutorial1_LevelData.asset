@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tutorial1_LevelData
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   scenePath: Assets/Scenes/Tutorial1.unity
-  levelName: Tutorial Level 1
+  levelName: Fire Starter
