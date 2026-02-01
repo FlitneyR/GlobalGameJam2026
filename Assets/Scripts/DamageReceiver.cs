@@ -48,6 +48,6 @@ public class DamageReceiver : MonoBehaviour
         }
 
         Destroy(GetComponent<Player>());
-        Destroy(GetComponent<SpriteRenderer>());
+        Destroy(GetComponentInChildren<SpriteRenderer>());
     }
 }

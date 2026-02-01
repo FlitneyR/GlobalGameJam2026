@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
     {
         moveAction = InputSystem.actions.FindAction("Move");
 
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame

@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4982458550076151068, guid: 198bea6a1fe02ac40bd4ac234495a9d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.59
+      value: 28.8
       objectReference: {fileID: 0}
     - target: {fileID: 4982458550076151068, guid: 198bea6a1fe02ac40bd4ac234495a9d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3519,11 +3519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2004289936940864555, guid: 469a38ffb85527443a2f8db8694170d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.70516
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 2004289936940864555, guid: 469a38ffb85527443a2f8db8694170d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.78
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2004289936940864555, guid: 469a38ffb85527443a2f8db8694170d9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3576,7 +3576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3633,7 +3633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 6640693609564559517, guid: 395e7c60e90514832978ebc3a56c58ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3686,11 +3686,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8153571483959964911, guid: 36e0bbf8fa7354c3db8be356a62d6907, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8412237
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8153571483959964911, guid: 36e0bbf8fa7354c3db8be356a62d6907, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.265179
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 8153571483959964911, guid: 36e0bbf8fa7354c3db8be356a62d6907, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5995,8 +5995,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -259234609
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}

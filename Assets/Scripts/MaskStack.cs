@@ -18,10 +18,17 @@ public class MaskStack : MonoBehaviour
         Mask mask = collider.GetComponent<Mask>();
         if (mask != null)
         {
+            if (masks.Contains(mask))
+            {
+                Debug.LogWarning("We're trying to collect a mask twice ... how?");
+                return;
+            }
+
             Debug.Log("Collected mask: " + mask);
 
             // remove the masks's rigidbody
             Destroy(collider.GetComponent<Rigidbody2D>());
+            Destroy(collider.GetComponentInChildren<BoxCollider2D>());
 
             // attach the mask to the player
             mask.gameObject.transform.localScale = new Vector2(wornMaskScale, wornMaskScale);
@@ -29,7 +36,7 @@ public class MaskStack : MonoBehaviour
             mask.gameObject.transform.localPosition = new Vector2(0, maskOffset * masks.Count);
 
             // make masks render in front of the player, and lower masks
-            SpriteRenderer spriteRenderer = collider.GetComponent<SpriteRenderer>();
+            SpriteRenderer spriteRenderer = collider.GetComponentInChildren<SpriteRenderer>();
             if (spriteRenderer != null)
             {
                 spriteRenderer.sortingLayerName = "Masks";
