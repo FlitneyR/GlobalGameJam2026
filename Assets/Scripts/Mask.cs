@@ -13,7 +13,10 @@ public class Mask : MonoBehaviour
     }
 
     /// <summary>
-    /// Pass an interactable
+    /// Check if you can interact with an interactable
+    /// </summary>
+    /// <param name="interactableObject"></param>
+    /// <returns> true if you can interact with the interactable </returns> 
     public virtual bool CanInteract(Interactable interactableObject)
     {
         return false;

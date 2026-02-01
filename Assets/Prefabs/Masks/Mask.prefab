@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 9075029546469674457}
   - component: {fileID: 5897203235112829120}
   - component: {fileID: 7378292960046444959}
+  - component: {fileID: -239278890193001373}
   m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
@@ -198,3 +199,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-239278890193001373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196072730306957821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b2bdc347e234efeb02c159ad4e4c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mask
